@@ -16,5 +16,4 @@ let contador = 0;
 
 //estrutura dee repetição "while" significa "enquanto algo acontecer"
 while(){
-
 }
