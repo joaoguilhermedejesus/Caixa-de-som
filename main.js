@@ -12,8 +12,10 @@ for(let contador = 0;contador < listaDeTeclas.length;contador++){
     tecla.onclick = function(){ //cria função anônima para chamar tocaSom
     tocaSom(idAudio);
 }
-    tecla.onkeydown = function(){
-        tecla.classList.add('ativa');
+    tecla.onkeydown = function(evento){
+        if(evento.code != 'tab'){
+       tecla.classList.add('ativa');            
+        }
     }
     tecla.onkeydown = function(){
         tecla.classList.remove('ativa');
